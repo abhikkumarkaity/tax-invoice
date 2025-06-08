@@ -1,0 +1,85 @@
+.invoice-container {
+  position: relative;
+  width: 794px; /* A4 width in px @ 96dpi */
+  height: 1123px; /* A4 height in px @ 96dpi */
+}
+
+.invoice-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* All overlayed text */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+
+/* === POSITIONING EXAMPLES === */
+.field.invoice-no {
+  position: absolute;
+  top: 60px;
+  left: 520px;
+}
+
+.field.invoice-date {
+  position: absolute;
+  top: 60px;
+  left: 650px;
+}
+
+.field.supplier-ref {
+  position: absolute;
+  top: 90px;
+  left: 520px;
+}
+
+/* Example positions – tune further based on actual PDF */
+.field.buyer-name {
+  position: absolute;
+  top: 220px;
+  left: 45px;
+}
+
+.field.item-1-desc {
+  position: absolute;
+  top: 460px;
+  left: 45px;
+}
+
+.field.item-1-rate {
+  position: absolute;
+  top: 460px;
+  left: 520px;
+}
+
+.field.item-1-amount {
+  position: absolute;
+  top: 460px;
+  left: 650px;
+}
+
+.field.total-amount {
+  position: absolute;
+  top: 650px;
+  left: 650px;
+  font-weight: bold;
+}
+
+.field.total-amount-words {
+  position: absolute;
+  top: 690px;
+  left: 45px;
+  width: 600px;
+}
+
+/* ...define other fields similarly */

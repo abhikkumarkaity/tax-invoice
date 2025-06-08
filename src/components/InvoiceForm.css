@@ -1,0 +1,146 @@
+/* InvoiceForm.css - Compact & Professional */
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #2c2c2c;
+  font-size: 14px;
+}
+
+.invoice-container {
+  max-width: 880px;
+  margin: 30px auto;
+  padding: 30px 24px;
+  background-color: #fff;
+  border: 1px solid #4465a7;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.invoice-heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1f1f1f;
+}
+
+.invoice-section {
+  background-color: #fcfcfc;
+  padding: 16px;
+  margin-bottom: 18px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+}
+
+.invoice-section h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #444;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  transition: border 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #3399ff;
+  box-shadow: 0 0 0 1px rgba(51, 153, 255, 0.2);
+  outline: none;
+}
+
+.invoice-button {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.invoice-button:hover {
+  background-color: #004094;
+}
+
+@media print {
+  .invoice-button {
+    display: none;
+  }
+
+  .invoice-container {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.invoice-container.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.invoice-container.two-column > div {
+  flex: 1 1 48%;  /* Two cards per row */
+  min-width: 300px;
+}
+
+/* Two-column grid layout */
+.grid-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-1col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .grid-2col,
+  .grid-3col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.company-info,
+.bank-info {
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+}

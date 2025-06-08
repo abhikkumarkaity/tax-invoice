@@ -1,0 +1,59 @@
+.box {
+  border: 1.5px solid #222;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #222;
+}
+
+.table-box {
+  border: 1.5px solid #222;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #222;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.invoice-table th, .invoice-table td {
+  border: 1px solid #bbb;
+  padding: 8px;
+  text-align: left;
+}
+
+.invoice-table th {
+  background: #eaeaea;
+  font-weight: bold;
+}
+
+button.no-print {
+  margin-bottom: 15px;
+}
+
+.party-details .box {
+  box-sizing: border-box;
+}
+
+.amount-in-words {
+  font-style: italic;
+  color: #444;
+}
+
+.signature .signatory {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.signature .jurisdiction,
+.signature .note {
+  font-style: italic;
+  color: #555;
+}

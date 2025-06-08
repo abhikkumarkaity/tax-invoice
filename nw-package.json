@@ -1,0 +1,9 @@
+{
+  "name": "tax-invoice-app",
+  "main": "build/index.html",
+  "window": {
+    "title": "Tax Invoice App",
+    "width": 1200,
+    "height": 800
+  }
+}
